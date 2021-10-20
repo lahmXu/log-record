@@ -14,18 +14,19 @@ public class LogRecordContext {
     private static final InheritableThreadLocal<Stack<Map<String, Object>>> variableMapStack = new InheritableThreadLocal<>();
 
     protected void setVariables(String key, Object obj){
-
+        // TODO 存储变量信息到 map 中
+//        variableMapStack.get().
     };
 
     public static  Map<String, Object> getVariables(){
-        return new HashMap<>();
+        return variableMapStack.get().peek();
     }
 
     public static void putEmptySpan(){
-
+        variableMapStack.get().push(new HashMap<>());
     }
 
     public static void clear(){
-
+        variableMapStack.get().pop();
     }
 }

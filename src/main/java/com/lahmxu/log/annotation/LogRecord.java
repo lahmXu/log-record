@@ -15,7 +15,7 @@ public @interface LogRecord {
      * 操作日志的文本模板
      * @return
      */
-    String success();
+    String content();
 
     /**
      * 操作日失败的文本模板

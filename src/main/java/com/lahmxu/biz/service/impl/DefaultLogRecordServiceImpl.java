@@ -1,7 +1,6 @@
-package com.lahmxu.biz.impl;
+package com.lahmxu.biz.service.impl;
 
-import com.lahmxu.biz.ILogRecordService;
-import com.lahmxu.log.aop.BeanFactoryLogRecordAdvisor;
+import com.lahmxu.biz.service.ILogRecordService;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.logging.LogRecord;

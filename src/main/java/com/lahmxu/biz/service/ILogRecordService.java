@@ -1,4 +1,4 @@
-package com.lahmxu.biz;
+package com.lahmxu.biz.service;
 
 import com.lahmxu.log.aop.BeanFactoryLogRecordAdvisor;
 
